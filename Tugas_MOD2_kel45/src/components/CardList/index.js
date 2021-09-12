@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function CardList(props) {
-  const { card_data, isNameBold } = props;
+  const { card_data, isNameBold, univ } = props;
 
   return (
     <div className="bg-blue-100 shadow">
@@ -32,6 +32,9 @@ export default function CardList(props) {
                   <p className="px-5 mt-1 text-sm font-medium text-gray-900">{nim}</p>
                   <p className="px-5 text-sm font-medium text-gray-900">
                   Kelompok {kelompok}
+                </p>
+                <p className="mt-10 px-5 text-sm font-medium text-gray-900">
+                  {univ}
                 </p>
                 </div>
                 <div>
