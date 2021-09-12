@@ -4,8 +4,10 @@ import "./index.css";
 import App from "./App";
 
 import CardList from './components/CardList';
-import gambar_1 from 'https://images.unsplash.com/photo-1588571590924-433cc2020a12?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RhdHVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80'
-import gambar_2 from 'https://collectionapi.metmuseum.org/api/collection/v1/iiif/253386/1389579/main-image'
+//fotonya diganti ya, xixixi
+//back to roman empire
+import gambar_1 from './assets/images/foto1.jpg'
+import gambar_2 from './assets/images/foto2.jpg'
 import Quotes from "./components/Quotes";
 
 const quotes =
@@ -20,9 +22,11 @@ const data = [
 
 ReactDOM.render(
   <React.StrictMode>
+    <App/>
     <CardList
       card_data = {data}
       isNameBold
+      univ = 'Universitas Diponegoro'
      />
 <Quotes author="Shirou" quotes={quotes} books={books}/>
   </React.StrictMode>,
